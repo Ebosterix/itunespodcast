@@ -1,0 +1,28 @@
+<h1>Hi !</h1>
+
+
+
+{{#each allPodcasts}}
+<div class="podcastImput ">
+  <div>
+    <p class="trackName">trackName: {{this.podcast.trackName}}</p>
+    <p class="artistName">artistName: {{this.podcast.artistName}}</p>
+    <p class="genres">genres: {{this.podcast.genres}}</p><br>
+
+</div>
+  </div>
+
+
+  <iframe src="{{this.embedURL}}" height="420" frameborder="0" 
+    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+    allow="autoplay *; encrypted-media *;"
+    style="width:45%; max-width:600px;
+           overflow: hidden; border-radius: 5px;
+           background: transparent; margin-left: 10px; 
+           margin-bottom: 20px; margin-top: 20px; 
+           margin-right: 10px; padding-top: 50px; paddding-bottom: 50px;">
+  </iframe> 
+ 
+</div>
+
+{{/each}}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+
+  <style>
+    /* Blue */
+  </style>
+</head>
+
+<body>
+
+  <div id="blankbox"></div>
+
+  <!--- Here starts the navbar --->
+  <div class="navbar">
+    <div class="leftNav">
+      <img class="toplogo" src="/images/podcastlogo2.png" width="50" height="50" alt="podcastlogo" />
+      <a class="cat" href="http://localhost:3005/">Home</a>
+      <a class="cat" href="/all?filter=News">News</a>
+      <a class="cat" href="/all?filter=Health-Fitness">Health & Fitness</a>
+      <a class="cat" href="/all?filter=Comedy">Comedy</a>
+      <a class="cat" href="/all?filter=Kids-Family">Kids & Family</a>
+      <a class="cat" href="/all?filter=Business">Business</a>
+      <a class="cat" href="/all?filter=Sports">Sports</a>
+      <a class="cat" href="/all?filter=Science">Science</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Other Categories
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <a href="/all?filter=Society-Culture">Society & Culture</a>
+          <a href="/all?filter=Education">Education</a>
+          <a href="/all?filter=True-Crime">True Crime</a>
+          <a href="/all?filter=Religion-Spirituality">Religion & Spirituality</a>
+          <a href="/all?filter=Arts">Arts</a>
+          <a href="/all?filter=History">History</a>
+          <a href="/all?filter=TV-Film">TV & Film</a>
+          <a href="/all?filter=Music">Music</a>
+          <a href="/all?filter=Technology">Technology</a>
+          <a href="/all?filter=Leisure">Leisure</a>
+          <a href="/all?filter=Fiction">Fiction</a>
+          <a href="/all?filter=Government">Government</a>
+
+
+        </div>
+
+
+      </div>
+      <input type="text" placeholder="Search..">
+    </div>
+    {{#if user}}
+    <button><b>{{user.username}}</b></button>
+    {{else}}
+    <a class="login" href="/login"><button><b>Login</b></button></a>
+    {{/if}}
+
+  </div>
+
+
+
+  {{{body}}}
+
+
+
+
+  <script src="/javascripts/script.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+body {
+  position: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F6F6F6;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+
+
+.toplogo {
+  height: 50px;
+  width: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 5px;
+   
+}
+
+nav div {
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 50px;
+}
+
+
+#login {
+  
+  margin-right: 1px;
+  height: 100vh;
+  background-color: #FF1616;
+  padding-top: 100px;
+  padding-right: 5px;
+  text-align: center;
+  background-image: url("/images/signupformimg5.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+
+}
+
+
+#blankbox {
+  height: 60px;
+  width: 100%;
+}
+
+
+/* Navbar container */
+.navbar {
+  height: 70px;
+  display: flex;
+  overflow: hidden;
+  background-color: #FF1616;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+  justify-content: space-between; 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.trackName  {
+  display: flex;
+  color: black;
+  font-size: 15px;;
+  text-emphasis: bold;
+  padding-left: 12px;
+  padding-top: 25px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+
+}
+
+.artistName {
+  display: flex;
+  color: black;
+  font-size:15px;
+  text-emphasis: bold;
+  padding-left: 12px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+ 
+
+}
+
+.genres {
+  display: flex;
+  color: black;
+  font-size:15px;
+  text-emphasis: bold;
+  padding-left: 12px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+}
+
+.podcastImput {
+  display: flex;
+  padding-left: 5px;
+  justify-content: space-between;
+  flex-flow: column;
+  
+}
+
+
+/*.podText {
+  float: left;
+        width: 50%;
+        height: 50%;
+        background-color: #FF1616;
+        
+}*/
+
+
+ /* Links inside the navbar */
+.navbar .cat {
+  
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 12px 12px;
+  margin-top: 8px;
+  text-decoration: none;
+  
+}
+/* The dropdown container */ 
+.dropdown {
+  overflow: hidden;
+  margin-top: 8px;
+ 
+
+ 
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+  
+}
+
+/* Add a red background color to navbar links on hover*/ 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:black;
+}
+
+/* Dropdown content (hidden by default) /*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+ /*Add a black background color to dropdown links on hover*/ 
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+ /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.leftNav {
+  display: flex;
+}
+
+.landingPage {
+  background-image: url("../images/podcastimg6.png");
+  background-size: 80%;
+  image-resolution: 100%;
+  image-orientation: right;
+  background-repeat: no-repeat;
+  height:400px;
+  width:100%;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%
+   
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+.button {
+  border: none;
+  color: rgb(182, 20, 20);
+  padding: 15px 32px;
+  text-align: center;
+ background-color: #FF1616;
+}
+
+
+/* Bordered form */
+form {
+ 
+  border: none;
+}
+
+/* input styling */
+ [type="text"], input [placeholder=Search]
+{
+  padding: 12px 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left:20px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 12px
+}
+
+/* Full-width inputs */
+.signup-box input[type=text], input[type=password] {
+  width: 15%;
+  text-align: center
+}
+
+
+/* styles for all buttons */
+button {
+  background-color: #FF1616;
+  color: black;
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px
+  
+  
+}  
+
+
+input[type=text] {
+  background-color: #E1E1E1;  
+}
+
+input[type=password] {
+  background-color: #E1E1E1;
+  padding: 12px 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+
+  
+}
+
+/* extra style for signup box buttons */
+.signup-box button {
+ 
+  width: auto;
+  padding: 12px 14px;
+  background-color: #f44336;
+  
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 12px 14px;
+  background-color: #f44336;
+}
+
+
+
+/* Add padding to containers */
+.container {
+  background-color:#000000;
+  padding-top: 5px;
+  text-align: center;
+  background-image: url("../images/signupformimg5.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: auto;
+    border-radius: 3px;
+  }
+}
